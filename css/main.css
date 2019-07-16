@@ -6,8 +6,8 @@ body {
   margin: 0 auto;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  margin-top: 6rem;
   box-sizing: border-box;
+  padding: 3rem 0;
 }
 
 img {
