@@ -33,5 +33,5 @@ input[type="text"] {
   background: transparent;
   border: 1px solid white;
   border-radius: 999px;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
