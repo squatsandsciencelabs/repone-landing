@@ -8,6 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   padding: 3rem 0;
+  line-height: 1.6em;
 }
 
 img {
@@ -17,6 +18,7 @@ img {
 
 h1 {
   font-size: 3rem;
+  line-height: 3.6rem;
   font-weight: normal;
 }
 
