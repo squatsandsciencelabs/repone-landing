@@ -48,86 +48,169 @@
 
   <img src="hero.png" alt="One giant rep for mankind.">
   <h1>A new dimension in strength</h1>
-  <h3>Get notified when RepOne preorders start</h3>
-  <input type="text" placeholder="Email address">
+  <h2>RepOne sensors make cutting edge velocity-based training possible.</h2>
+  <!-- <input type="text" placeholder="Email address"> -->
 
   <section>
     <img src="img/tracking.svg" alt="" />
     <div>
-      <h2>Full 3D motion sensing</h2>
-      <p>RepOne goes beyond velocity. Record your entire motion path in 3 dimensions, from any angle. Barpath, jump height, and more.</p>
+      <h2>Automatic workout tracking</h2>
+      <p>You lift, we track. RepOne is smart enough to count sets and reps automatically, recording dozens of datapoints about each.</p>
     </div>
   </section>
 
   <section>
     <img src="img/motion.svg" alt="" />
     <div>
-      <h2>Incredible accuracy</h2>
-      <p>We use a tether because it’s lightyears more accurate than wearables or cameras. Never miss a rep, and never doubt your data.</p>
+      <h2>Full 3D motion sensing</h2>
+      <p>RepOne’s inductive sensor monitors motion in full 3d space, so you can track barpath, jump trajectory, and dozens of other movements.</p>
     </div>
   </section>
 
   <section>
     <img src="img/angle.svg" alt="" />
     <div>
+      <h2>Accuracy at any angle</h2>
+      <p>RepOne’s tether is vastly more accurate than wearables or camera systems, and its 3D sensor maintains accuracy when used at an angle--unlike other tethered devices.</p>
+    </div>
+  </section>
+
+  <section>
+    <h1>Works wherever you work out.</h1>
+  </section>
+
+  <section>
+    <img src="img/setup.svg" alt="" />
+    <div>
+      <h2>Easy magnetic setup</h2>
+      <p>Set up in 5 seconds. RepOne’s magnetic base clamps securely to a plate or rack, and the tether attaches to the bar via roller magnet or any other object using the included strap.</p>
+    </div>
+  </section>
+
+  <section>
+    <img src="img/battery.svg" alt="" />
+    <div>
       <h2>A month of battery</h2>
-      <p>RepOne can run for up to a month on a standard 5-day-per-week program, so you don’t have to worry about charging every time you use it.</p>
+      <p>You read that right: RepOne can run for a week continuously, or up to a month if turned off between sessions--so you don’t have to charge it every time you use it.</p>
     </div>
   </section>
 
   <section>
-    <img src="hero.png" alt="" />
+    <img src="img/durability.svg" alt="" />
     <div>
-      <h2>Goes where you go</h2>
-      <p>RepOne is fully contained so you can pick it up and go any time. When you're ready to work out, the magnetized bottom secures to a plate.</p>
+      <h2>Durability, guaranteed</h2>
+      <p>RepOne technology has been taking a beating in real gyms around the world for years. We’re so confident it will last, you get free repairs for a year.</p>
     </div>
   </section>
 
   <section>
-    <img src="hero.png" alt="" />
-    <div>
-      <h2>Time-tested durability</h2>
-      <p>RepOne technology has been taking a beating in real gyms around the world for years, enabling us to develop the most durable device possible.</p>
-    </div>
+    <h1>Software built for strength.</h1>
   </section>
 
-  <section>
-    <img src="hero.png" alt="" />
-    <div>
-      <h2>Easy, powerful app</h2>
-      <p>RepOne’s mobile app is built for serious athletes. It’s simple, fast, and never gets in the way of your workout.</p>
-    </div>
-  </section>
+  <div class="button-group">
+    <p>I am an</p>
+    <a href="javascript:void();" id="individual-button" class="button selected" onclick="toggleSoftware('individual')">Individual</a>
+    <a href="javascript:void();" id="team-button" class="button" onclick="toggleSoftware('team')">Organization</a>
+    <script type="text/javascript">
+      function toggleSoftware(type) {
+        var y = document.getElementById("software-individuals");
+        var x = document.getElementById("software-teams");
+        var ind_btn = document.getElementById("individual-button");
+        var team_btn = document.getElementById("team-button");
+        if (type == 'team') {
+          x.style.display = "block";
+          y.style.display = "none";
+          team_btn.className = "button selected";
+          ind_btn.className = "button";
+        } else {
+          x.style.display = "none";
+          y.style.display = "block";
+          team_btn.className = "button";
+          ind_btn.className = "button selected";
+        }
+      }
+   </script>
+  </div>
+
+  <div id="software-individuals">
+    <section>
+      <img src="img/athlete-app.png" alt="" />
+      <div>
+        <h2>Real time velocity feedback</h2>
+        <p>See your velocities in real time on both the app and the sensor so you can adjust and stay on target.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Powerful data analytics</h2>
+      <p>See your strength progress over time across dozens of indicators and calculate your unique load/velocity curve.</p>
+    </section>
+
+    <section>
+      <h2>Customize to fit your training</h2>
+      <p>You have specific training goals, so RepOne lets you choose the metrics you want to see during workouts.</p>
+    </section>
+  </div>
+
+  <div id="software-teams" style="display:none;">
+    <section>
+      <img src="img/kiosk.png" alt="" />
+      <div>
+        <h2>An assistant coach at every rack</h2>
+        <p>See your velocities in real time on both the app and the sensor so you can adjust and stay on target.</p>
+      </div>
+    </section>
+
+    <section>
+      <img src="img/ams.png" alt="" />
+      <div>
+        <h2>Efficient athlete management</h2>
+        <p>See your strength progress over time across dozens of indicators and calculate your unique load/velocity curve.</p>
+      </div>
+    </section>
+
+    <section>
+      <img src="img/program-builder.png" alt="" />
+      <div>
+        <h2>Powerful program builder</h2>
+        <p>RepOne technology has been taking a beating in real gyms around the world for years. We’re so confident it will last, you get free repairs for a year.</p>
+      </div>
+    </section>
+  </div>
 
   <section>
-    <img src="hero.png" alt="" />
+    <img src="img/value.svg" alt="" />
     <div>
       <h2>Unbeatable value</h2>
-      <p>RepOne goes beyond velocity. Record your entire motion path in 3 dimensions, from any angle. Barpath, jump height, and more.</p>
+      <p>No other VBT device with accurate 3D sensing comes close to RepOne’s price point. Period.</p>
     </div>
-
-    <!-- Begin Mailchimp Signup Form -->
-    <div id="mc_embed_signup">
-    <form action="https://reponestrength.us15.list-manage.com/subscribe/post?u=078ce319da053f89d04c3128b&amp;id=9537b0d2f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-
-    <div class="mc-field-group" id="signup">
-    	<!-- <label for="mce-EMAIL">Email Address </label> -->
-    	<input type="email" placeholder="Email address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-    </div>
-    	<div id="mce-responses" class="clear">
-    		<div class="response" id="mce-error-response" style="display:none"></div>
-    		<div class="response" id="mce-success-response" style="display:none"></div>
-    	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_078ce319da053f89d04c3128b_9537b0d2f9" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-    </div>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='PHONE';ftypes[4]='phone';fnames[2]='ORGNAME';ftypes[2]='text';fnames[3]='JOBTITLE';ftypes[3]='text';fnames[5]='NUMTEAMS';ftypes[5]='number';fnames[6]='NUMATHLETE';ftypes[6]='number';fnames[7]='NUMSTATION';ftypes[7]='number';fnames[8]='OTHER';ftypes[8]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-    <!--End mc_embed_signup-->
   </section>
 
+  <section>
+    <h2>Preorders open 8/8</h2>
+    <p>First come first served. Join the waitlist to be notified as soon as RepOne is available.</p>
+
+  <!-- Begin Mailchimp Signup Form -->
+  <div id="mc_embed_signup">
+  <form action="https://reponestrength.us15.list-manage.com/subscribe/post?u=078ce319da053f89d04c3128b&amp;id=9537b0d2f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+
+  <div class="mc-field-group" id="signup">
+    <!-- <label for="mce-EMAIL">Email Address </label> -->
+    <input type="email" placeholder="Email address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+  </div>
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_078ce319da053f89d04c3128b_9537b0d2f9" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
+  </form>
+  </div>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='PHONE';ftypes[4]='phone';fnames[2]='ORGNAME';ftypes[2]='text';fnames[3]='JOBTITLE';ftypes[3]='text';fnames[5]='NUMTEAMS';ftypes[5]='number';fnames[6]='NUMATHLETE';ftypes[6]='number';fnames[7]='NUMSTATION';ftypes[7]='number';fnames[8]='OTHER';ftypes[8]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <!--End mc_embed_signup-->
+  </section>
 
   </div>
 </body>

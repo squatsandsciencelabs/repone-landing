@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 h3 {
@@ -61,6 +61,27 @@ navbar .right {
   font-size: .8rem;
 }
 
+.button-group .button:first-of-type {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.button-group .button:last-of-type {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.button-group .button {
+  border-radius: 0;
+  border: 1px solid grey;
+  color: lightgrey;
+  padding: 1rem;
+  margin: 0;
+}
+.button-group .button.selected {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
 .button {
   text-decoration: none;
   color: #fff;
@@ -73,14 +94,38 @@ navbar .right {
   border-radius: 999px;
 }
 
+section {
+  margin: 8rem 0 0 0;
+  /* text-align: left; */
+}
+
 .wrapper {
   width: 90%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 12rem auto;
   padding-top: 4rem;
 }
 
 .wrapper img {
   width: 90%;
-  margin: 4rem 0 0 0;
+  margin: 0 0 1rem 0;
+}
+
+#software-individuals section {
+  margin-top: 3rem;
+}
+
+#software-individuals {
+  margin-top: 6rem;
+}
+
+#mc_embed_signup * {
+  width: 100% !important;
+  border-radius: 999px !important;
+}
+
+#mc_embed_signup .button {
+  background: #2D9CDB !important;
+  border-radius: 999px !important;
+  height: 2.5rem !important;
 }
