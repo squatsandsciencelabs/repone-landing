@@ -58,24 +58,24 @@
 
 <body>
   <script>
-  var deadline = new Date("Aug 8, 2019 20:00:00 UTC-4:00").getTime();
-  var x = setInterval(function() {
-  var now = new Date().getTime();
-  var t = deadline - now;
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-  var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((t % (1000 * 60)) / 1000);
-  function attach_element(id) {
-    document.getElementById(id).innerHTML = days + " days " + hours + " hrs";
-    if (t < 0) {
-      clearInterval(x);
-      document.getElementById(id).innerHTML = "EXPIRED";
+    var deadline = new Date("Aug 8, 2019 20:00:00 UTC-4:00").getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    function attach_element(id) {
+      document.getElementById(id).innerHTML = days + " days " + hours + " hrs";
+      if (t < 0) {
+        clearInterval(x);
+        document.getElementById(id).innerHTML = "EXPIRED";
+      }
     }
-  }
-  attach_element("countdown");
-  attach_element("hero-countdown");
-  }, 1000);
+    attach_element("countdown");
+    attach_element("hero-countdown");
+    }, 1000);
   </script>
 
   <navbar>
