@@ -57,13 +57,31 @@
 </head>
 
 <body>
+  <script>
+  var deadline = new Date("Aug 8, 2019 20:00:00 UTC-4:00").getTime();
+  var x = setInterval(function() {
+  var now = new Date().getTime();
+  var t = deadline - now;
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+  var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((t % (1000 * 60)) / 1000);
+  document.getElementById("countdown").innerHTML = days + " days "
+  + hours + " hrs";
+      if (t < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+  }, 1000);
+  </script>
+
   <navbar>
     <div class="left">
       <img src="logo.svg" alt="RepOne Logo">
       <span class="logo">Rep One</span>
     </div>
     <div class="right">
-      <span class="preorder-date">Preorder 8/8 &nbsp;</span>
+      <span class="preorder-date" id="countdown"></span>
       <a href="#signup" class="button header-cta">NOTIFY ME</a>
     </div>
   </navbar>
@@ -184,7 +202,7 @@
       <img src="img/kiosk.png" alt="" />
       <div class="text-container">
         <h3>Smart athlete kiosk</h3>
-        <p>Your assistant at every station. The athlete kiosk works with the RepOne sensor to guide athletes through their workout and adjust their individual load/volume based on their performance.</p>
+        <p>Your assistant at every station. The athlete kiosk works with the RepOne sensor to guide athletes through their workout and adjust their load/volume based on their performance.</p>
       </div>
     </section>
 
@@ -238,7 +256,7 @@
   </section>
 
   <section class="single-col">
-    <h2>Preorders open 8/8</h2>
+    <h2>Preorders open<br>August 8 at 8pm EST</h2>
     <p>First come first served. Join the waitlist to be notified as soon as RepOne is available.</p>
 
   <!-- Begin Mailchimp Signup Form -->
