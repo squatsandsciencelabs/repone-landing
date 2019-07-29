@@ -18,6 +18,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  line-height: 2.6rem;
   font-weight: 500;
 }
 
@@ -144,7 +145,7 @@ section {
 @media only screen and (min-width: 1024px) {
   .wrapper {
     width: 100%;
-    max-width: none;
+    max-width: 1440px;
   }
   section {
     margin-top: 4rem;
@@ -186,10 +187,18 @@ section {
   }
   .horizontal img {
     margin-right: 2%;
+    width: 30%;
+    max-width: 450px;
   }
   .horizontal .text-container {
     display: inline-block;
-    max-width: 550px;
+    width: 65%;
+    max-width: 600px;
     text-align: left;
+  }
+
+  .button-group {
+    font-size: 2rem;
+    margin-bottom: 8rem;
   }
 }
