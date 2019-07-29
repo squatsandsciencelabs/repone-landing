@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
@@ -176,5 +176,20 @@ section {
     max-width: 500px;
     display: inline-block;
     margin-top: 0;
+  }
+
+  .horizontal {
+    width: 98%;
+  }
+  .horizontal > * {
+    vertical-align: middle;
+  }
+  .horizontal img {
+    margin-right: 2%;
+  }
+  .horizontal .text-container {
+    display: inline-block;
+    max-width: 550px;
+    text-align: left;
   }
 }
