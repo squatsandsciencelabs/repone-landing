@@ -116,7 +116,7 @@ section {
   width: 90%;
   max-width: 400px;
   margin: 0 auto 12rem auto;
-  padding-top: 4rem;
+  padding-top: 1px;
 }
 
 .wrapper img {
@@ -129,7 +129,7 @@ section {
   max-width: 400px;
 }
 
-.hwicon {
+img.hwicon {
   max-width: 250px;
 }
 
@@ -195,16 +195,17 @@ section {
 
   .third-width, .half-width {
     text-align: left;
-    margin-right: 2%;
+    margin-right: 3%;
     display: inline-block;
     vertical-align: top;
   }
   .third-width {
-    width: 30%;
+    width: 28%;
     max-width: 350px;
   }
   .half-width {
     width: 45%;
+    margin-right: 5%;
     max-width: 500px;
   }
   .single-col {
