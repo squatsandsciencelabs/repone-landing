@@ -143,13 +143,26 @@ section {
 
 #mc_embed_signup * {
   width: 100% !important;
-  border-radius: 999px !important;
 }
 
-#mc_embed_signup .button {
+#mc_embed_signup input[type="submit"].button {
   background: #2D9CDB !important;
-  border-radius: 999px !important;
-  height: 2.5rem !important;
+  /* height: 2.5rem !important; */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+  height: auto;
+  line-height: normal;
+  border-radius: 999px;
+}
+
+#mc_embed_signup input[type="email"] {
+  background: black !important;
+  border-color: lightgrey !important;
+  padding: 1rem .5rem !important;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 6px;
 }
 
 @media only screen and (min-width: 1024px) {
