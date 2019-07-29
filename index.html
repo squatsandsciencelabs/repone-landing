@@ -66,12 +66,15 @@
   var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
   var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((t % (1000 * 60)) / 1000);
-  document.getElementById("countdown").innerHTML = days + " days "
-  + hours + " hrs";
-      if (t < 0) {
-          clearInterval(x);
-          document.getElementById("countdown").innerHTML = "EXPIRED";
-      }
+  function attach_element(id) {
+    document.getElementById(id).innerHTML = days + " days " + hours + " hrs";
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById(id).innerHTML = "EXPIRED";
+    }
+  }
+  attach_element("countdown");
+  attach_element("hero-countdown");
   }, 1000);
   </script>
 
@@ -91,7 +94,7 @@
   <section class="hero">
     <img src="hero.png" alt="One giant rep for mankind.">
     <h1>A new dimension in strength</h1>
-    <h2>Take your training to the next level with RepOne’s complete system for velocity-based training.</h2>
+    <h2>Take your performance to the next level with RepOne’s velocity-based training system. Available 8/8 at 8pm EST.</h2>
   </section>
 
   <section class="third-width">
@@ -252,7 +255,7 @@
   </section>
 
   <section>
-    <h1>Be first in line</h1>
+    <h1 id="hero-countdown">Be first in line</h1>
   </section>
 
   <section class="single-col">
