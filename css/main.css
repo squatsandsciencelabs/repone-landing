@@ -17,8 +17,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   font-weight: 500;
   max-width: 900px;
   margin-left: auto;
@@ -141,21 +141,16 @@ img.hwicon {
   margin-top: 6rem;
 }
 
-#mc_embed_signup * {
-  width: 100% !important;
-}
-
 #mc_embed_signup input[type="submit"].button {
   background: #2D9CDB !important;
   /* height: 2.5rem !important; */
   font-weight: 600;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   height: auto;
   line-height: normal;
   border-radius: 999px;
 }
-
 #mc_embed_signup input[type="email"] {
   background: black !important;
   border-color: lightgrey !important;
@@ -163,6 +158,9 @@ img.hwicon {
   font-size: 1.2rem;
   color: white;
   border-radius: 6px;
+}
+#mc_embed_signup input[type="checkbox"] {
+  margin-right: .5rem;
 }
 
 @media only screen and (min-width: 1024px) {
