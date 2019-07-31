@@ -141,6 +141,15 @@ img.hwicon {
   margin-top: 6rem;
 }
 
+.price {
+  font-size: 3rem;
+  line-height: 4rem;
+  background: rgb(255,15,87);
+  background: -webkit-linear-gradient(286deg, rgba(255,15,87,1) 20%, rgba(187,107,217,1) 50%, rgba(43,178,255,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #mc_embed_signup input[type="submit"].button {
   background: #2D9CDB !important;
   /* height: 2.5rem !important; */
