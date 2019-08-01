@@ -20,6 +20,10 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+  <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+
   <!-- Mailchimp -->
   <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
   <style type="text/css">
@@ -240,16 +244,18 @@
   </div>
 
   <section>
-    <h1>Unbeatable value</h1>
+    <h1>Unmatched value</h1>
   </section>
 
   <section class="third-width">
     <img src="img/price-device.png" alt="" />
     <div>
       <h3><span class="price">$399</span><br>RepOne Sensor</h3>
-      <p>No other VBT device with accurate 3D sensing comes close to RepOne’s price point. Compatible with the free RepOne mobile app, and with StrengthOS for training orgs.</p>
+      <p>No other VBT device with accurate 3D sensing comes close to RepOne’s price point. Compatible with the free RepOne Personal app, and with StrengthOS for training orgs.</p>
     </div>
   </section>
+
+  <section class="separator"></section>
 
   <section class="third-width">
     <img src="img/price-ams.png" alt="" />
@@ -257,6 +263,39 @@
       <h3><span class="price">$99</span>/mo<br>StrengthOS for Organizations</h3>
       <p>The world’s most powerful autoregulated program builder, plus a full athlete management system all in one, for serious teams and trainers.</p>
     </div>
+  </section>
+
+  <section>
+    <h1>Used by the best</h1>
+
+    <div class="slider-container">
+      <div class="teams-slider">
+        <div><img src="img/teams/1.png" alt=""></div>
+        <div><img src="img/teams/2.png" alt=""></div>
+        <div><img src="img/teams/3.png" alt=""></div>
+        <div><img src="img/teams/4.png" alt=""></div>
+        <div><img src="img/teams/5.png" alt=""></div>
+        <div><img src="img/teams/6.png" alt=""></div>
+        <div><img src="img/teams/7.png" alt="" style="max-width:150px"></div>
+      </div>
+    </div>
+
+    <script type="module">
+      var slider = tns({
+        container: '.teams-slider',
+        items: 3,
+        slideBy: 'page',
+        autoplay: true,
+        controls: false,
+        nav: false,
+        autoplayButtonOutput: false,
+        responsive: {
+          768: {
+            items: 4
+          }
+        }
+      });
+    </script>
   </section>
 
   <section>
@@ -307,5 +346,16 @@
   </section>
 
   </div>
+<script>
+  var form = document.getElementById('mc-embedded-subscribe-form');
+  // Adds a listener for the "submit" event.
+  form.addEventListener('submit', function(event) {
+
+    // Sends the event to Google Analytics and
+    // resubmits the form once the hit is done.
+    gtag('event', 'signup_form_complete');
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
 </body>
 </html>

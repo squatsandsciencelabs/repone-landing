@@ -50,6 +50,7 @@ navbar {
   padding: 1rem;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 navbar * {
@@ -149,7 +150,9 @@ img.hwicon {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+#mc_embed_signup {
+  font: inherit;
+}
 #mc_embed_signup input[type="submit"].button {
   background: #2D9CDB !important;
   /* height: 2.5rem !important; */
@@ -172,6 +175,10 @@ img.hwicon {
   margin-right: .5rem;
 }
 
+section.separator {
+  display: none;
+}
+
 @media only screen and (min-width: 1024px) {
   .wrapper {
     width: 100%;
@@ -191,6 +198,10 @@ img.hwicon {
   section {
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+  section.separator {
+    display: inline-block;
+    width: 6%;
   }
 
   h1 {
@@ -242,5 +253,14 @@ img.hwicon {
   .button-group {
     font-size: 2rem;
     margin-bottom: 8rem;
+  }
+
+  .slider-container {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .tns-item img {
+    max-height: 200px;
   }
 }
