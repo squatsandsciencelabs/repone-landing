@@ -10,6 +10,7 @@ body {
   line-height: 1.6em;
 }
 
+
 h1 {
   font-size: 3rem;
   line-height: 3.6rem;
@@ -28,12 +29,27 @@ h2 {
 h3 {
   font-size: 1.2rem;
   font-weight: 600;
+  text-align: left;
 }
 
 p {
   color: lightgrey;
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 1.8rem;
+  text-align: left;
+}
+p strong {
+  color: white;
+}
+
+ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }
 
 input[type="text"] {
@@ -52,7 +68,6 @@ navbar {
   width: 100%;
   z-index: 999;
 }
-
 navbar * {
   vertical-align: middle;
 }
@@ -60,19 +75,20 @@ navbar > * {
   display: inline-block;
   /* max-width: 720px; */
 }
-
 navbar .left {
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
   width: 33%;
 }
-
 navbar .right {
   color: lightgrey;
   font-size: .8rem;
   text-align: right;
   width: 65%;
+}
+navbar img {
+  width: auto;
 }
 
 .button-group .button:first-of-type {
@@ -100,6 +116,24 @@ navbar .right {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  display: inline-block;
+}
+.button.outline {
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 100%;
+  min-width: 12rem;
+  padding: 1rem;
+  text-align: center;
+}
+.button.solid {
+  border-radius: 4px;
+  width: 100%;
+  min-width: 12rem;
+  padding: 1rem;
+  text-align: center;
+  background: #2D9CDB;
+  margin: 2rem auto;
 }
 
 .header-cta {
@@ -134,21 +168,18 @@ img.hwicon {
   max-width: 250px;
 }
 
-#software-individuals section {
-  margin-top: 3rem;
-}
-
 #software-individuals, #software-teams {
   margin-top: 6rem;
 }
 
 .price {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 4rem;
-  background: rgb(255,15,87);
+  color: rgb(43,178,255);
+  /* background: rgb(255,15,87);
   background: -webkit-linear-gradient(286deg, rgba(255,15,87,1) 20%, rgba(187,107,217,1) 50%, rgba(43,178,255,1) 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 #mc_embed_signup {
   font: inherit;
@@ -177,6 +208,31 @@ img.hwicon {
 
 section.separator {
   display: none;
+}
+
+.horizontal.software > * {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.horizontal.software img {
+  width: 100%;
+}
+.strengthos {
+  background-color: white;
+  color: black;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+.strengthos p {
+  color: #333;
+}
+.strengthos strong {
+  color: black;
+}
+.strengthos .button {
+  color: black;
+  border-color: black;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -239,17 +295,33 @@ section.separator {
     vertical-align: middle;
   }
   .horizontal img {
-    margin-right: 2%;
+    margin-right: 3%;
     width: 30%;
     max-width: 450px;
   }
   .horizontal .text-container {
     display: inline-block;
-    width: 65%;
+    width: 62%;
     max-width: 600px;
     text-align: left;
   }
 
+  .strengthos {
+    width: 100%;
+  }
+  .horizontal.software img {
+    margin: 2rem 1rem 2rem 0;
+  }
+  .strengthos h1 {
+    margin-top: 4rem;
+  }
+  .horizontal.software h2 {
+    margin-bottom: 3rem;
+  }
+
+  .button.outline {
+    width: auto;
+  }
   .button-group {
     font-size: 2rem;
     margin-bottom: 8rem;
