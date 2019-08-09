@@ -61,26 +61,6 @@
 </head>
 
 <body>
-  <script>
-    var deadline = new Date("Aug 8, 2019 20:00:00 UTC-4:00").getTime();
-    var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    function attach_element(id) {
-      document.getElementById(id).innerHTML = days + " days " + hours + " hrs";
-      if (t < 0) {
-        clearInterval(x);
-        document.getElementById(id).innerHTML = "EXPIRED";
-      }
-    }
-    attach_element("countdown");
-    attach_element("hero-countdown");
-    }, 1000);
-  </script>
 
   <navbar>
     <div class="left">
@@ -147,102 +127,39 @@
       <p>RepOne technology has been taking a beating in real gyms around the world for years. We’re so confident it will last, you get free repairs for a year.</p>
     </div>
   </section>
+</div> <!-- end wrapper -->
 
-  <section>
-    <h1>Software built for strength.</h1>
+  <section class="horizontal software">
+    <h1>RepOne Personal App</h1>
+    <h2>Free workout tracking for individual athletes</h2>
+    <img src="img/athlete-app.png" alt="RepOne Personal">
+    <div class="text-container">
+      <p><strong>Connect to a single motion sensor</strong> via bluetooth on your mobile device.</p>
+      <p><strong>See extended set metrics</strong> in real time while you lift.</p>
+      <p><strong>Auto-track workouts</strong> with smart set and rep detection.</p>
+      <p><strong>Track progression</strong> through a detailed history view.</p>
+      <p><strong>Calculate maxes</strong> with our cutting-edge 1RM algorithm.</p>
+      <a href="repone-personal.html" class="button outline">Learn More</a>
+    </div>
   </section>
 
-  <div class="button-group">
-    <h2>I am an</h2>
-    <a href="javascript:void();" id="individual-button" class="button selected" onclick="toggleSoftware('individual')">Individual</a>
-    <a href="javascript:void();" id="team-button" class="button" onclick="toggleSoftware('team')">Organization</a>
-    <script type="text/javascript">
-      function toggleSoftware(type) {
-        var y = document.getElementById("software-individuals");
-        var x = document.getElementById("software-teams");
-        var ind_btn = document.getElementById("individual-button");
-        var team_btn = document.getElementById("team-button");
-        if (type == 'team') {
-          x.style.display = "block";
-          y.style.display = "none";
-          team_btn.className = "button selected";
-          ind_btn.className = "button";
-        } else {
-          x.style.display = "none";
-          y.style.display = "block";
-          team_btn.className = "button";
-          ind_btn.className = "button selected";
-        }
-      }
-   </script>
-  </div>
+  <br>
 
-  <div id="software-individuals">
+  <section class="horizontal software strengthos">
+    <h1>StrengthOS for Teams</h1>
+    <h2>Connect and automate your entire gym</h2>
+    <img src="img/strengthos-on-racks.png" alt="RepOne Personal">
+    <div class="text-container">
+      <p><strong>Smart workout stations</strong> deliver your programs to every station.</p>
+      <p><strong>Guided autoregulation</strong> keeps athletes in your target ranges.</p>
+      <p><strong>Design velocity-based workouts</strong> with our powerful program builder.</p>
+      <p><strong>Team-scale VBT</strong> individualizes your workouts automatically.</p>
+      <p><strong>Keep athletes focused</strong> with auto-tracking and guidance.</p>
+      <a href="strengthos.html" class="button outline">Learn More</a>
+    </div>
+  </section>
 
-    <h2>The RepOne mobile app: flexible, capable, and free.</h2>
-
-    <section class="third-width">
-      <img src="img/athlete-app-1rm.png" alt="" />
-      <div>
-        <h3>Powerful data analytics</h3>
-        <p>See your strength progress over time and calculate your estimated one rep max with our built-in algorithm.</p>
-      </div>
-    </section>
-
-    <section class="third-width">
-      <img src="img/athlete-app-velocity.png" alt="" />
-      <div>
-        <h3>Real time velocity feedback</h3>
-        <p>See your velocities in real time on both the app and the sensor so you can adjust and stay on target.</p>
-      </div>
-    </section>
-
-    <section class="third-width">
-      <img src="img/athlete-app-customize.png" alt="" />
-      <div>
-        <h3>Customize to fit your training</h3>
-        <p>You have specific training goals, so RepOne lets you choose the metrics you want to see during workouts.</p>
-      </div>
-    </section>
-  </div>
-
-  <div id="software-teams" style="display:none;">
-
-    <h2>StrengthOS is superpowered athlete management for serious teams and trainers.</h2>
-
-    <section class="horizontal">
-      <img src="img/kiosk.png" alt="" />
-      <div class="text-container">
-        <h3>Smart workout kiosk</h3>
-        <p>Your assistant at every station. The athlete kiosk works with the RepOne sensor to guide athletes through their workout and adjust load/volume based on their performance. It's even capable of coordinating several athletes per station.</p>
-      </div>
-    </section>
-
-    <section class="horizontal">
-      <img src="img/ams.png" alt="Athlete management system" />
-      <div class="text-container">
-        <h3>Efficient athlete management</h3>
-        <p>RepOne StrengthOS does it all so you don’t need to maintain multiple systems. Keep track of athletes, assign programs, and manage your team's schedule from our AMS.</p>
-      </div>
-    </section>
-
-    <section class="horizontal">
-      <img src="img/program-builder.png" alt="Powerful program builder" />
-      <div class="text-container">
-        <h3>Powerful program builder</h3>
-        <p>RepOne is flexible so you can design programs your way, and its powerful autoregulation features help you specify target metrics to optimize training.</p>
-      </div>
-    </section>
-
-    <section class="horizontal">
-      <img src="img/analytics.png" alt="Advanced analytics" />
-      <div class="text-container">
-        <h3>Advanced analytics</h3>
-        <p>Start a data-oriented culture in your gym. RepOne StrengthOS tracks your athletes' progress across dozens of metrics, and makes it easy to share reports for transparency.</p>
-      </div>
-    </section>
-  </div>
-
+  <div class="wrapper">
   <section>
     <h1>Unmatched value</h1>
     <div id="pricing"></div>
@@ -251,7 +168,7 @@
   <section class="third-width">
     <img src="img/price-device.png" alt="RepOne 3D Motion Sensor" />
     <div>
-      <h3><span class="price">$399</span><br>RepOne 3D Motion Tracker</h3>
+      <h3><span class="price">$399</span><br>RepOne 3D Motion Sensor</h3>
       <p>No other high-accuracy VBT device comes close to RepOne’s price point, and none are capable of 3D motion tracking. Compatible with the RepOne Personal and StrengthOS.</p>
       <div id='product-component-65a40cea5fd'></div>
     </div>
@@ -260,17 +177,32 @@
   <section class="separator"></section>
 
   <section class="third-width">
+    <img src="img/roller_hook.png" alt="RepOne 3D Motion Sensor" />
+    <div>
+      <h3><span class="price">$11.99</span><br>Roller Magnet</h3>
+      <p>With a strong cylindrical neodymium magnet and metal D Ring, this tough attachment method makes sure your tether is always at the bottom of the barbell where it belongs.</p>
+      <div id='product-component-9393db7a41a'></div>
+    </div>
+  </section>
+
+  <section class="third-width">
     <img src="img/price-ams.png" alt="StrengthOS" />
     <div>
-      <h3><span class="price">$99</span>/mo<br>StrengthOS for Organizations</h3>
+      <h3><span class="price">$99</span>/mo<br>StrengthOS for Teams</h3>
       <p>The world’s most powerful autoregulated program builder, plus a full athlete management system all in one, for serious teams and trainers.</p>
+      <p><strong>Preorder bonuses:</strong></p>
+      <ul>
+        <li>Prioritized hardware shipment when you add StrengthOS</li>
+        <li>One free month of service, or two with annual plan</li>
+      </ul>
+      <p>Note: Requires a RepOne sensor and iPad Mini 2 or later at each workout station</p>
       <div id='product-component-6bf8d54d208'></div>
     </div>
   </section>
 
   <section>
     <h1>Trusted by the best</h1>
-    <h3>Our products are used in gyms around the world</h3>
+    <h2>Our products are used in gyms around the world</h2>
 
     <div class="slider-container">
       <div class="teams-slider">
@@ -303,9 +235,8 @@
   </section>
 
   <section class="single-col" id="signup">
-    <h1 id="hero-countdown">Be first in line</h1>
-    <h2>Preorders open<br>August 8 at 8pm EST</h2>
-    <p>First come first served. Join the waitlist to be notified as soon as RepOne is available.</p>
+    <h1 id="hero-countdown">Keep in touch</h1>
+    <p>Join the mailing list to stay up to date with RepOne products, including when they're available without a preorder (estimated mid-2020)</p>
 
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
@@ -346,7 +277,7 @@
     <!--End mc_embed_signup-->
   </section>
 
-  </div>
+</div> <!--End wrapper-->
 <script>
   var form = document.getElementById('mc-embedded-subscribe-form');
   // Adds a listener for the "submit" event.
