@@ -42,6 +42,10 @@ p strong {
   color: white;
 }
 
+a {
+  color: white;
+}
+
 ul {
   text-align: left;
   max-width: 600px;
