@@ -355,6 +355,10 @@ section.separator {
 
 .shopify-buy-frame {
   position: relative;
+  color: black;
+}
+.shopify-buy__cart-item__title, .shopify-buy__cart-item__variant-title {
+  text-align: left;
 }
 .shopify-buy-frame .shopify-buy__product {
   position: relative;
