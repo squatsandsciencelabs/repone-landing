@@ -288,17 +288,6 @@
         </div>
       </form>
     </div>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>
-      (function($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[0] = 'EMAIL';
-        ftypes[0] = 'email';
-      }(jQuery));
-      var $mcj = jQuery.noConflict(true);
-    </script>
-    <!--End mc_embed_signup-->
   </section>
 
   <h1>Follow RepOne</h1>
@@ -319,29 +308,61 @@
   </section> -->
 
 </div> <!--End wrapper-->
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5d7fe3cec22bdd393bb620d0/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
-  <script>
-    var form = document.getElementById('mc-embedded-subscribe-form');
-    // Adds a listener for the "submit" event.
-    form.addEventListener('submit', function(event) {
 
-      // Sends the event to Google Analytics and
-      // resubmits the form once the hit is done.
-      gtag('event', 'signup_form_complete');
-    });
-  </script>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+
+<script type="text/javascript">
+  // ////////////////////////////////
+  // TAWK
+  // ////////////////////////////////
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5d7fe3cec22bdd393bb620d0/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+
+  // ////////////////////////////////
+  // MAILCHIMP SUBSCRIBE FORM
+  // ////////////////////////////////
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+  // Add google analytics event
+  var form = document.getElementById('mc-embedded-subscribe-form');
+  form.addEventListener('submit', function(event) {
+    gtag('event', 'signup_form_complete');
+  });
+
+  // function delegate(el, evt, sel, handler) {
+  //     // console.log("delegate called");
+  //     el.addEventListener(evt, function(event) {
+  //         var t = event.target;
+  //         // console.log("listener called");
+  //         // console.log(t);
+  //         while (t && t !== this) {
+  //             if (t.matches(sel)) {
+  //                 handler.call(t, event);
+  //             }
+  //             t = t.parentNode;
+  //         }
+  //     });
+  // }
+  //
+  // delegate(document, "mouseup", ".shopify-buy-frame", function(event) {
+  //   fbq('track', 'AddToCart');
+  //   console.log("listener function called");
+  // });
+
+
+</script>
 </body>
 </html>
