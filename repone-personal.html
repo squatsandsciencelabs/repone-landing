@@ -129,18 +129,20 @@
 
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
-<!--Start of Tawk.to Script-->
+
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d7fe3cec22bdd393bb620d0/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+// ////////////////////////////////
+// FRESHCHAT WIDGET
+// ////////////////////////////////
+function initFreshChat() {
+  window.fcWidget.init({
+    token: "171fc39f-7a8c-4751-8c64-e1acd34b23dd",
+    host: "https://wchat.freshchat.com"
+  });
+}
+function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+
 </script>
-<!--End of Tawk.to Script-->
+
 </body>
 </html>

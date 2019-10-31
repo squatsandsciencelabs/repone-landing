@@ -95,8 +95,15 @@
 
   <section class="hero">
     <img src="hero.png" alt="One giant rep for mankind.">
-    <h1>A new dimension in strength</h1>
-    <h2>Optimize your workouts with the power of velocity-based training.</h2>
+    <h1>Train better with data</h1>
+    <h2>Take strength training to the next level with RepOne 3D motion sensors.</h2>
+  </section>
+
+  <section class="half-width">
+    <img src="lifter.png" alt="">
+    <h2>One-size-fits-all programs are a thing of the past</h2>
+    <p>Your strength strength changes constantly, and so should your workouts. RepOne identifies the optimal load and volume for every set by monitoring rep velocities, so you can train safely and efficiently.</p>
+    <p><a href="">Learn more about velocity-based training</a> including free workout programs and the latest research</p>
   </section>
 
   <section class="third-width">
@@ -313,18 +320,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
 
 <script type="text/javascript">
+
   // ////////////////////////////////
-  // TAWK
+  // FRESHCHAT WIDGET
   // ////////////////////////////////
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5d7fe3cec22bdd393bb620d0/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "171fc39f-7a8c-4751-8c64-e1acd34b23dd",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 
   // ////////////////////////////////
   // MAILCHIMP SUBSCRIBE FORM
