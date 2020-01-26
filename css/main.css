@@ -105,6 +105,9 @@ navbar .right {
 navbar img {
   width: auto;
 }
+navbar a {
+  text-decoration: none;
+}
 
 .button-group .button:first-of-type {
   border-top-left-radius: 4px;
