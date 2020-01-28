@@ -368,3 +368,14 @@ section.separator {
   margin: 0;
   display: block;
 }
+
+section.metrics {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.metrics p {
+  font-size: 1rem;
+  color: white;
+}
