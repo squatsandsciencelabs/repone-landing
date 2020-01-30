@@ -379,3 +379,11 @@ section.metrics {
   font-size: 1rem;
   color: white;
 }
+.metrics ul, .metrics ol {
+  margin: 0;
+  max-width: none;
+}
+.metrics img {
+  width: 100%;
+  max-width: none;
+}

@@ -39,8 +39,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1C1C1C">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
 
   <script type="text/javascript" class="_iub_cs_activate-inline">
@@ -50,8 +50,8 @@
 </head>
   <body>
     <navbar>
-      <a href="index.html" class="left">
-        <img src="logo.svg" alt="RepOne Logo">
+      <a href="/" class="left">
+        <img src="/logo.svg" alt="RepOne Logo">
         <span class="logo">RepOne</span>
       </a>
       <div class="right">
@@ -59,39 +59,27 @@
       </div>
     </navbar>
 
-    <div class="wrapper half-width">
+    <div class="wrapper">
+      <section class="metrics">
 
-    <h1>RepOne 3D Sensor Troubleshooting</h1>
-
-<h3>Android</h3>
-Make sure Bluetooth is on. Do not pair RepOne Device through Settings! ‘Forget’ the device if you have. If on android os 6.0+, make sure Location Services is on. Then,
-<ol>
-  <li>Force kill RepOne Application</li>
-  <li>Turn RepOne Device off</li>
-  <li>Clear Phone Bluetooth Cache</li>
-  <li>Clear RepOne Application Cache</li>
-  <li>Restart Phone</li>
-  <li>Turn Device on</li>
-  <li>Start RepOne Application</li>
-  <li>Select a RepOne Device from the list</li>
-</ol>
+    <h1>How do I get the best estimated 1RM results?</h1>
 
 
-<h3>iOS</h3>
-Make sure Bluetooth is on. Then,
-<ol>
-  <li>Force kill RepOne Application</li>
-  <li>Turn RepOne Device off</li>
-  <li>Restart Phone</li>
-  <li>Turn RepOne Device on</li>
-  <li>Start RepOne Application</li>
-  <li>Select a RepOne Device from the list</li>
-</ol>
+Because One Rep Max estimation involves plotting your data on a graph and performing a linear regression, there’s a few things you can do to improve your r² and the accuracy of your one rep max calculation.
 
+<h3>Tips</h3>
+<ul>
+<li>Log everything from your warmups with just the bar to your working weight. A good spread of weights will result in more accurate linear regressions.</li>
+<li>Log with consistent tag names and exercise names. This allows you to isolate your exercises properly. For example, if you happened to log both back squats and front squats as “squat” with no tags, then your squat one rep max calculation will be very off.</li>
+<li>Log your weights. Without them, the algorithm can’t plot the point on the graph.</li>
+<li>Go to Settings and set your default weight to either KG or LB, whichever is most common. Update the kg/lb on sets as appropriate. If your KG/LBs are wrong, then the data will look pretty off.</li>
+<li>Erase false reps caused by unracking the bar or attaching/removing an OpenBarbell.</li>
+<li>Enter RPE for every set as accurately as possible. We use RPE 1RM to help pick the most relevant data for One Rep Max calculation.</li>
+<li>If you record data for multiple lifters on the same account, tag each set with the person’s name. You can then use the name in “Tags must include” to get their one rep maxes.</li>
+</ul>
 
-<p>If the above steps do not work, try uninstalling and re-installing the RepOne app on your phone.<br>
-Last but not least, if you still have issues make sure to contact us with any issue you may still have. Be sure to include your device brand and model, operating system and operating system version.
-</p>
+<p>If you’re curious about the inner workings, check out <a href="/1rmalgorithm">How does our Algorithm work?</a></p>
+  </section>
   </div>
   </body>
 </html>
