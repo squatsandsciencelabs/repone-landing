@@ -44,9 +44,6 @@ p {
   text-align: left;
   margin: 1rem 0;
 }
-p strong {
-  color: white;
-}
 
 a {
   color: white;
@@ -285,6 +282,14 @@ section.separator {
   .hero h1 {
     margin-top: 3rem;
   }
+  .hero {
+    margin-bottom: 4rem;
+  }
+  .hero a {
+    color: #777;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
 
   .third-width, .half-width {
     text-align: left;
@@ -386,4 +391,26 @@ section.metrics {
 .metrics img {
   width: 100%;
   max-width: none;
+}
+
+section.white {
+  background: white;
+  color: #333;
+}
+.white p {
+  color: #333;
+}
+
+.preorder-bag p, .preorder-bag h2, .preorder-bag img {
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem;
+}
+.preorder-bag {
+  padding-bottom: 2rem;w
+}
+
+.preorder-notice {
+  color: #78b657;
 }
