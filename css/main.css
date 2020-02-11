@@ -57,6 +57,10 @@ ul, ol {
   padding-left: 1rem;
 }
 
+.centered-text {
+  text-align: center;
+}
+
 img {
   display: inline;
 }
