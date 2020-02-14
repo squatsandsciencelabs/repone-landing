@@ -262,12 +262,11 @@
 
   function ShopifyBuyInit() {
 
-    window._GROWTHHERO_INIT_PIXEL(client);
-
     var client = ShopifyBuy.buildClient({
       domain: 'repone-strength.myshopify.com',
       storefrontAccessToken: 'cacddf005ae35dfd448f6b3f06664f3e',
     });
+    window._GROWTHHERO_INIT_PIXEL(client);
 
     ShopifyBuy.UI.onReady(client).then(function(ui) {
       ui.createComponent('product', {
