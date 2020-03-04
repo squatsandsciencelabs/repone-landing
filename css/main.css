@@ -74,6 +74,7 @@ input[type="text"] {
   background: transparent;
   border: 1px solid white;
   border-radius: 999px;
+  color: white;
 }
 
 navbar {
@@ -160,6 +161,8 @@ navbar a {
   padding: .5rem 1rem;
   border-radius: 999px;
   margin-left: 3px;
+  border: none;
+  color: white;
 }
 
 section {
@@ -417,4 +420,8 @@ section.white {
 
 .preorder-notice {
   color: #78b657;
+}
+
+.hidden{
+  display:none;
 }
