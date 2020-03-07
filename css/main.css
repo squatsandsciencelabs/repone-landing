@@ -425,3 +425,8 @@ section.white {
 .hidden{
   display:none;
 }
+
+#shipping_dates {
+  color: #2D9CDB;
+  text-decoration: underline;
+}
