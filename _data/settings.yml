@@ -1,0 +1,17 @@
+title: 'RepOne Strength'
+tagline: 'A simple framework for starting your own Jekyll project'
+
+author:
+  name: 'Paul Le'
+
+google-ID: 'UA-112060364-4'
+
+menu:
+# Uncomment to activate the menu looping function in the header.html file under _includes
+  - {name: 'Individuals', url: 'repone-personal/'}
+  - {name: 'Teams', url: 'strengthos/'}
+  - {name: 'Learn', url: 'learn/'}
+
+social:
+# Uncomment to activate the social media icon looping function in the footer.html file under _includes
+#- {icon: 'github', link: 'https://www.github.com/lenpaul'}
