@@ -16,7 +16,7 @@ p, a
 	font-weight: 500
 
 img
-	width: 100%
+	max-width: 100%
 
 .feature-block, .landing-hero
 	padding: 4rem 0
@@ -26,20 +26,22 @@ span
 
 .description
 	padding: 0 2rem
-	
+
 .graphic
 	text-align: center
 
+
 @media (min-width: 800px)
+
 	.feature-block
 		display: grid
-		grid-template-columns: auto 1fr
-	.graphic
-		grid-column-start: 1
-		img
-			width: auto
-			max-width: 50vw
-			max-height: 100vh
+		grid-template-columns: auto minmax(50%, 1fr)
+		max-width: 1280px
+		margin: 0 auto
 
-	.description
-		grid-column-start: 2
+		.graphic
+			grid-column-start: 1
+			img
+				max-height: 100vh
+		.description
+			grid-column-start: 2
