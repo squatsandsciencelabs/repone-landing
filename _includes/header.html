@@ -1,10 +1,14 @@
 <header>
   <div class="logo">
-    <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
+    <img src="/assets/img/Logo.svg" alt="">
+    <a href="{{ site.github.url }}/">RepOne</a>
   </div>
   <nav>
     {% for item in site.data.settings.menu %}
       <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
   </nav>
+  <div class="cta">
+    <a href="">Buy Now</a>
+  </div>
 </header>
