@@ -1,14 +1,12 @@
 h1, h2, h3
 	font-weight: 800
-	text-align: center
 	line-height: 1.2
-	padding: 0 2rem
 h1
-	font-size: 72px
-h2
 	font-size: 64px
+h2
+	font-size: 56px
 h3
-	font-size: 42px
+	font-size: 32px
 
 p, a
 	color: grey
@@ -19,11 +17,32 @@ img
 	max-width: 100%
 
 .feature-block, .landing-hero
-	padding: 4rem 0
+	padding: 6rem 0
 
-.landing-hero
+.hero-wrapper
 	background: black
 	color: white
+	display: block
+
+.landing-hero
+	padding-top: 10rem
+	overflow: hidden
+	margin-bottom: 8rem
+	.graphic
+		margin: 0 auto
+		position: relative
+	.chalk-img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%) scale(1.2)
+	.hero-img
+		max-width: 70%
+		position: relative
+	.description
+		max-width: 600px
+		position: relative
+		z-index: 1 // Stops it from being covered by hero graphic
 
 span
 	color: black
@@ -33,19 +52,52 @@ span
 
 .graphic
 	text-align: center
+	position: relative
+	&.materials-render
+		max-width: 70%
+		margin: 0 auto
 
+section
+	max-width: 1280px
+	margin: 0 auto
+
+h2.section-head
+	padding: 0 2rem
+	margin-bottom: 0
 
 @media (min-width: 800px)
 
-	.feature-block
+	.feature-block, .landing-hero
 		display: grid
 		grid-template-columns: auto minmax(50%, 1fr)
-		max-width: 1280px
-		margin: 0 auto
 
 		.graphic
-			grid-column-start: 1
+			grid-column: 1
 			img
-				max-height: 100vh
+				max-height: 90vh
 		.description
-			grid-column-start: 2
+			grid-column: 2
+		
+		&.right
+			.graphic
+				grid-column: 2
+			.description
+				grid-column: 1
+				grid-row: 1
+	
+	.landing-hero
+		h1
+			text-align: left
+	
+	h1, h2, h3
+		text-align: center
+
+@media (min-width: 900px)
+	p
+		font-size: 30px
+	h1
+		font-size: 72px
+	h2
+		font-size: 64px
+	h3
+		font-size: 42px
